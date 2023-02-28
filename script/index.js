@@ -10,14 +10,23 @@ const questions = [
         name: 'title',
         message: 'What is the title of your project?',
     },
-    
+    {
+        type: 'input',
+        name: 'message',
+        message: 'Please enter in a brief description of your project',
+    },
+    {
+        type: 'input',
+        name: 'message',
+        message: 'Please provide a table of contents for your README',
+    },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();
