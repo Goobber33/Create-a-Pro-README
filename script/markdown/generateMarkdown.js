@@ -76,7 +76,7 @@ function generateMarkdown(data) {
   Installation
   ${data.installation}
   
-  Usage
+  Usage 
   ${data.usage}
   
   Contributing
@@ -87,7 +87,7 @@ function generateMarkdown(data) {
   
   ${licenseSection}
   
-  Questions
+  Questions:
   If you have any questions, feel free to reach out to me at ${data.email}. You can also check out my GitHub profile for more of my projects: ${githubLink}.
   
   `;
