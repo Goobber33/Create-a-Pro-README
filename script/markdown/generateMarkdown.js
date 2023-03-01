@@ -1,5 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
+// This function takes in a license type as a parameter and returns a corresponding license badge image link. If no license is passed in, it returns an empty string.
+
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
     return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
@@ -16,6 +19,9 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+
+// This function takes in a license type as a parameter and returns a corresponding license link. If no license is passed in, it returns an empty string.
+
 function renderLicenseLink(license) {
   if (license === 'MIT') {
   return 'MIT';
