@@ -59,7 +59,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseSection = renderLicenseSection(data.license);
-
+  const githubLink = `[${data.github}](https://github.com/${data.github})`;
 
   // Return a markdown formatted string that includes the data from the data object, the license badge image link and license section obtained from the renderLicenseBadge and renderLicenseSection functions
 
@@ -88,7 +88,7 @@ function generateMarkdown(data) {
   ${licenseSection}
   
   Questions
-  If you have any questions, feel free to reach out to me at ${data.email}. You can also check out my GitHub profile for more of my projects.
+  If you have any questions, feel free to reach out to me at ${data.email}. You can also check out my GitHub profile for more of my projects: ${githubLink}.
   
   `;
 }
