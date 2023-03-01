@@ -61,37 +61,39 @@ function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
   const githubLink = `[${data.github}](https://github.com/${data.github})`;
 
-  // Return a markdown formatted string that includes the data from the data object, the license badge image link and license section obtained from the renderLicenseBadge and renderLicenseSection functions
+  // create a bullet list of table of contents items
+  const tableOfContents = data.tableOfContents.split(',').map(item => `- ${item.trim()}`).join('\n');
 
+  // Return a markdown formatted string that includes the data from the data object, the license badge image link and license section obtained from the renderLicenseBadge and renderLicenseSection functions
   return `# ${data.title}
-  
-  ${licenseBadge}
-  
-  Description
-  ${data.description}
-  
-  Table of Contents
-  ${data.tableOfContents}
-  
-  Installation
-  ${data.installation}
-  
-  Usage 
-  ${data.usage}
-  
-  Contributing
-  ${data.contributing}
-  
-  Tests
-  ${data.tests}
-  
-  ${licenseSection}
-  
-  Questions:
-  If you have any questions, feel free to reach out to me at ${data.email}. You can also check out my GitHub profile for more of my projects: ${githubLink}.
-  
-  `;
+
+${licenseBadge}
+
+## Description
+${data.description}
+
+## Table of Contents
+${tableOfContents}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+${licenseSection}
+
+## Questions
+If you have any questions, feel free to reach out to me at ${data.email}. You can also check out my GitHub profile for more of my projects: ${githubLink}.
+`;
 }
+
 
 // Export the generateMarkdown function for use in other files
 
