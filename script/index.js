@@ -40,6 +40,12 @@ const questions = [
         name: 'testing',
         message: 'Please provide testing instructions for your project:',
     },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license is your project using?',
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+    },
 ];
 
 // TODO: Create a function to write README file
