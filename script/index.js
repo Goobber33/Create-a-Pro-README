@@ -12,13 +12,33 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'message',
-        message: 'Please enter in a brief description of your project',
+        name: 'description',
+        message: 'Please enter in a brief description of your project:',
     },
     {
         type: 'input',
-        name: 'message',
-        message: 'Please provide a table of contents for your README',
+        name: 'tableOfContents',
+        message: 'Please provide a table of contents for your README:',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Please provide details on how to install your project:',
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide instructions on how to use your project:',
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Please provide guidelines for contributions on your project:',
+    },
+    {
+        type: 'input',
+        name: 'testing',
+        message: 'Please provide testing instructions for your project:',
     },
 ];
 
