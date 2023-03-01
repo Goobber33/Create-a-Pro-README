@@ -73,7 +73,12 @@ ${licenseBadge}
 ${data.description}
 
 ## Table of Contents
-${tableOfContents}
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributions](#contributions)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 ${data.installation}

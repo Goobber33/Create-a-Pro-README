@@ -3,10 +3,15 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-  This application will take the user informationand turn it into a README.md file. It asks for the title of the project, a brief description, table of contents, how to install the project, how to use it, guidelines for contributions, testing, what license the user is using for their project, and finally it asks for the users email and GitHub username. The app will take this information and it will build a README.md with the information provided.
+This application will take the user informationand turn it into a README.md file. It asks for the title of the project, a brief description, table of contents, how to install the project, how to use it, guidelines for contributions, testing, what license the user is using for their project, and finally it asks for the users email and GitHub username. The app will take this information and it will build a README.md with the information provided.
 
 ## Table of Contents
-- Installation Usage Contributing Tests Questions
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributions](#contributions)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 To install this project, clone the repository from Github and open it in your own IDE.

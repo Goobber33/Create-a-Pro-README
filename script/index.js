@@ -66,7 +66,7 @@ function writeToFile(fileName, data) {
         }
         else {
             console.log('README.md created!');
-        }
+        }   
     });
 }
 
