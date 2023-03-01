@@ -62,9 +62,13 @@ function generateMarkdown(data) {
   const githubLink = `[${data.github}](https://github.com/${data.github})`;
 
   // create a bullet list of table of contents items
-  const tableOfContents = data.tableOfContents.split(',').map(item => `- ${item.trim()}`).join('\n');
+  
+  const tableOfContents = data.tableOfContents
+    ? data.tableOfContents.split(",").map((item) => `- ${item.trim()}`).join("\n")
+    : "n/a";
 
   // Return a markdown formatted string that includes the data from the data object, the license badge image link and license section obtained from the renderLicenseBadge and renderLicenseSection functions
+
   return `# ${data.title}
 
 ${licenseBadge}
